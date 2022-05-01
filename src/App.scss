@@ -4,7 +4,40 @@
 
 .box {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 32px;
   gap: 16px;
+}
+
+.search-form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: palegoldenrod;
+}
+
+.flow-column {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
